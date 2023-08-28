@@ -100,6 +100,10 @@ ul {
   margin: 0 auto;
   padding: 0 15px;
 
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
   @media screen and (min-width: 768px) {
     width: 768px;
   }
@@ -178,6 +182,11 @@ ul {
     gap: 40px;
     margin-left: 76px;
   }
+}
+
+.header-logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .header-logo-web {
   color: var(--iris, #4d5ae5);
@@ -317,7 +326,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 188px 0;
+  padding: 112px 0;
 
   @media screen and (min-width: 768px) {
     background-color: var(--navyblue);
@@ -337,6 +346,7 @@ ul {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-bg-d.png);
+    padding: 188px 0;
   }
 }
 
@@ -504,7 +514,7 @@ ul {
 
 .criteria-top-text {
   color: var(--navyblue);
-  font-size: 20px;
+  font-size: 36px;
   font-weight: 500;
   letter-spacing: 0.4px;
   margin-bottom: 8px;
@@ -538,6 +548,7 @@ ul {
 
 .section {
   padding: 96px 0;
+  justify-content: center;
 
   @media screen and (min-width: 768px) {
     padding: 96px 0;
@@ -883,7 +894,7 @@ ul {
   padding: 72px 24px 24px 24px;
   /* min-width: 408px; */
   /* min-height: 584px; */
-  min-width: 428px;
+  width: 100%;
   height: 100vh;
   background-color: var(--dairy, #fcfcfc);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
@@ -958,6 +969,7 @@ ul {
   /* width: 360px;
     height: 336px; */
   border-radius: 4px;
+  width: 100%;
   /* margin-left: 24px;
     margin-right: 24px; */
 }
@@ -971,6 +983,7 @@ ul {
 .form-field {
   position: relative;
   margin-bottom: 30px;
+  width: 100%;
   font-size: 12px;
   line-height: 1.166;
   letter-spacing: 0.01em;
@@ -986,6 +999,7 @@ ul {
   position: relative;
   margin-bottom: 16px;
   font-size: 12px;
+  width: 100%;
   line-height: 1.166;
   letter-spacing: 0.01em;
   color: var(--lightslate, #8e8f99);
@@ -993,7 +1007,7 @@ ul {
 
 .form-input {
   display: block;
-  width: 360px;
+  width: 100%;
   height: 40px;
   padding-top: 11px;
   padding-bottom: 11px;
@@ -1034,7 +1048,7 @@ ul {
 }
 
 .form-textarea {
-  width: 360px;
+  width: 100%;
   height: 120px;
   flex-shrink: 0;
   padding-top: 8px;
@@ -1302,7 +1316,7 @@ ul {
     align-items: center;
     gap: 24px; */
 
-  width: 300px;
+  /* width: 300px; */
   gap: 24px;
   display: flex;
   flex-wrap: wrap;
@@ -1365,7 +1379,7 @@ ul {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   gap: 48px;
   flex-wrap: wrap;
 
@@ -1386,9 +1400,12 @@ ul {
 
 .features-item {
   display: flex;
-  width: 396px;
+  /* width: 396px; */
+  width: 100%;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
+  justify-content: center;
+  align-items: center;
   border-radius: 0px 0px 4px 4px;
 
   @media screen and (min-width: 768px) {
